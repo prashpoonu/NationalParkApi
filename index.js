@@ -61,6 +61,7 @@ function BuildQueryString(parameters)
         $('#tblResult').append(`<tr><td>${jsonResult.data[i].fullName}</td>
         <td>${jsonResult.data[i].description}</td>
         <td>${jsonResult.data[i].url}</td>
+        <td>${BuildAddressList(jsonResult.data[i].addresses)}</td>
         </tr>`);
      }
     
@@ -68,6 +69,17 @@ function BuildQueryString(parameters)
      
      
  }
+
+function BuildAddressList(addressData) {
+    let addrList = `<ul>`;
+    for (let k = 0; k < addressData.length; k++) 
+    {
+      addrList+=`<li>${addressData[k].line1} ${addressData[k].city}, ${addressData[k].stateCode} ${addressData[k].postalCode}</li>`;
+
+    }
+    addrList +=`</ul>`;
+    return addrList;
+}
     
     
     

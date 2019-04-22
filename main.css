@@ -86,9 +86,15 @@ option {
     min-width: 20px;
     font-size:80px;
 }
-#tblResult{
+/* #tblResult{
     width:100%;
-}
+} */
+
+th, td {
+
+    border: 1px solid black;
+
+  }
 
 /* #num-results::placeholder {
     font-size: 3vw;

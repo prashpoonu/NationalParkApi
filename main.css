@@ -84,11 +84,15 @@ option {
 #num-results {
     width: 4vw;
     min-width: 20px;
+    font-size:80px;
+}
+#tblResult{
+    width:100%;
 }
 
-#num-results::placeholder {
+/* #num-results::placeholder {
     font-size: 3vw;
-}
+} */
 
 @media only screen and (min-width: 700px) {
     header {
@@ -98,8 +102,9 @@ option {
         margin-right: auto;
     }
     #num-results {
-        width: 6vw;
-        padding-top: 2%;
+        width: 8vw;
+        font-size:80px;
+        
     }
     #num-results::placeholder {
         font-size: 5vw;
